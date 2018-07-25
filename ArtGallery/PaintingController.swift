@@ -24,10 +24,8 @@ class PaintingController {
     }
     
     func toggleIsLiked(for painting: Painting) {
-        print(painting)
-        print(painting.isLiked)
         if (painting.isLiked == "Like") {
-            painting.isLiked = "Remove like"
+            painting.isLiked = "Unlike"
         } else {
             painting.isLiked = "Like"
         }

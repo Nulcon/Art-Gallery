@@ -12,6 +12,7 @@ class PaintingTableViewCell: UITableViewCell {
     func updateViews() {
         guard let painting = painting else { return }
         paintingImage.image = painting.image
+        likeOrDislikeButton.setTitle(painting.isLiked, for: .normal)
     }
     
     @IBAction func toggleLikeStatus(_ sender: Any) {

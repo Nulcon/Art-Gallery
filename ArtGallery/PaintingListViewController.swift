@@ -37,7 +37,7 @@ class PaintingListViewController: UIViewController, UITableViewDataSource, Paint
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        tableView.rowHeight = 190
+        tableView.rowHeight = 405
     }
 
     @IBOutlet var tableView: UITableView!

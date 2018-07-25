@@ -18,31 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fwo-PZ-p5W">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fwo-PZ-p5W">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaintingCell" rowHeight="190" id="WMt-QV-5gj" customClass="PaintingTableViewCell" customModule="ArtGallery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="190"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaintingCell" rowHeight="256" id="WMt-QV-5gj" customClass="PaintingTableViewCell" customModule="ArtGallery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="256"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WMt-QV-5gj" id="LXP-px-BDm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="255.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOe-SG-2Ih">
-                                                    <rect key="frame" x="67" y="0.0" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jOe-SG-2Ih">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="190"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wai-MV-hce">
-                                                    <rect key="frame" x="145" y="136" width="84" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wai-MV-hce">
+                                                    <rect key="frame" x="145.5" y="202" width="84" height="43"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="84" id="XTR-dn-9B5"/>
+                                                        <constraint firstAttribute="height" constant="43" id="w0C-A1-m7B"/>
+                                                    </constraints>
                                                     <state key="normal" title="Like"/>
                                                     <connections>
                                                         <action selector="toggleLikeStatus:" destination="WMt-QV-5gj" eventType="touchUpInside" id="odb-pd-rLG"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wai-MV-hce" secondAttribute="bottom" id="5wB-np-vwU"/>
+                                                <constraint firstItem="wai-MV-hce" firstAttribute="centerX" secondItem="LXP-px-BDm" secondAttribute="centerX" id="Ngi-ts-WTi"/>
+                                                <constraint firstItem="jOe-SG-2Ih" firstAttribute="top" secondItem="LXP-px-BDm" secondAttribute="top" id="Rr9-pX-K7t"/>
+                                                <constraint firstItem="wai-MV-hce" firstAttribute="top" secondItem="jOe-SG-2Ih" secondAttribute="bottom" constant="12" id="Ysd-Lb-hIH"/>
+                                                <constraint firstItem="jOe-SG-2Ih" firstAttribute="leading" secondItem="LXP-px-BDm" secondAttribute="leadingMargin" id="aSx-p0-QIc"/>
+                                                <constraint firstItem="jOe-SG-2Ih" firstAttribute="centerX" secondItem="wai-MV-hce" secondAttribute="centerX" id="fkq-ZJ-6ia"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="likeOrDislikeButton" destination="wai-MV-hce" id="tIZ-uB-paE"/>
@@ -53,6 +62,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fwo-PZ-p5W" secondAttribute="trailing" id="XBa-ku-TPB"/>
+                            <constraint firstItem="fwo-PZ-p5W" firstAttribute="bottom" secondItem="7Ve-aN-cZ2" secondAttribute="bottom" id="YbO-bQ-Dle"/>
+                            <constraint firstItem="fwo-PZ-p5W" firstAttribute="leading" secondItem="Ft1-cp-8eC" secondAttribute="leading" id="fwR-Hp-Wef"/>
+                            <constraint firstItem="fwo-PZ-p5W" firstAttribute="top" secondItem="7Ve-aN-cZ2" secondAttribute="top" id="qAT-sX-BHE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Ve-aN-cZ2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Art Gallery" id="g4k-fJ-guq"/>
