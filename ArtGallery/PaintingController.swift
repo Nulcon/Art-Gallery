@@ -18,13 +18,19 @@ class PaintingController {
         for n in 1...12 {
             let currentImageAsset = "Image\(n)"
             guard let imageWithAsset = UIImage(named: currentImageAsset) else { return }
-            let painting = Painting(isLiked: false, image: imageWithAsset)
+            let painting = Painting(isLiked: "Like", image: imageWithAsset)
             paintings.append(painting)
         }
     }
     
     func toggleIsLiked(for painting: Painting) {
-        painting.isLiked = !(painting.isLiked)
+        print(painting)
+        print(painting.isLiked)
+        if (painting.isLiked == "Like") {
+            painting.isLiked = "Remove like"
+        } else {
+            painting.isLiked = "Like"
+        }
     }
     
     var paintings: [Painting] = []

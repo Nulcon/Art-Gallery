@@ -15,11 +15,12 @@ class PaintingTableViewCell: UITableViewCell {
     }
     
     @IBAction func toggleLikeStatus(_ sender: Any) {
-        
+        delegate?.likeButtonWasTapped(on: self)
     }
     
     @IBOutlet weak var likeOrDislikeButton: UIButton!
     @IBOutlet var paintingImage: UIImageView!
+    weak var delegate: PaintingTableViewCellDelegate?
     
     var painting: Painting? {
         didSet {

@@ -11,9 +11,9 @@ import UIKit
 
 class Painting {
     let image: UIImage?
-    var isLiked: Bool = false
+    var isLiked: String
     
-    init(isLiked: Bool, image: UIImage) {
+    init(isLiked: String, image: UIImage) {
         self.isLiked = isLiked
         self.image = image
     }

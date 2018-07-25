@@ -11,6 +11,7 @@
 		13975ADC2109114300CE151B /* PaintingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975ADB2109114300CE151B /* PaintingController.swift */; };
 		13975ADE2109166C00CE151B /* PaintingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975ADD2109166C00CE151B /* PaintingTableViewCell.swift */; };
 		13975AE021091CF600CE151B /* PaintingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975ADF21091CF600CE151B /* PaintingListViewController.swift */; };
+		13975AE2210928DC00CE151B /* PaintingTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13975AE1210928DC00CE151B /* PaintingTableViewCellDelegate.swift */; };
 		469AAC42210258C200C0D421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469AAC41210258C200C0D421 /* AppDelegate.swift */; };
 		469AAC47210258C200C0D421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469AAC45210258C200C0D421 /* Main.storyboard */; };
 		469AAC49210258C300C0D421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469AAC48210258C300C0D421 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		13975ADB2109114300CE151B /* PaintingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingController.swift; sourceTree = "<group>"; };
 		13975ADD2109166C00CE151B /* PaintingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingTableViewCell.swift; sourceTree = "<group>"; };
 		13975ADF21091CF600CE151B /* PaintingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingListViewController.swift; sourceTree = "<group>"; };
+		13975AE1210928DC00CE151B /* PaintingTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		469AAC3E210258C200C0D421 /* ArtGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469AAC41210258C200C0D421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469AAC46210258C200C0D421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				469AAC41210258C200C0D421 /* AppDelegate.swift */,
 				469AAC45210258C200C0D421 /* Main.storyboard */,
+				13975AE1210928DC00CE151B /* PaintingTableViewCellDelegate.swift */,
 				13975AD921090D2200CE151B /* Painting.swift */,
 				469AAC48210258C300C0D421 /* Assets.xcassets */,
 				469AAC4A210258C300C0D421 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				13975ADC2109114300CE151B /* PaintingController.swift in Sources */,
 				13975ADE2109166C00CE151B /* PaintingTableViewCell.swift in Sources */,
 				13975AE021091CF600CE151B /* PaintingListViewController.swift in Sources */,
+				13975AE2210928DC00CE151B /* PaintingTableViewCellDelegate.swift in Sources */,
 				469AAC42210258C200C0D421 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
